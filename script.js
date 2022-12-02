@@ -8,7 +8,6 @@ function getLanguage() {
     }
     if(text = "en-GB"){
         moment.tz.setDefault("Europe/London");
-        console.log("hello");
     }
     if(text = "pt-BR")
     {
@@ -18,6 +17,6 @@ function getLanguage() {
 
 var update = function() {
     document.getElementById("time")
-    .innerHTML = moment().format('h:mm:ss a');
+    .innerHTML = moment().format('h:mm:ss a ');
 }
 setInterval(update, 1000);

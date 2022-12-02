@@ -8,7 +8,9 @@
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -18,15 +20,17 @@
     </div>
     <div class = "main-container">
         <div class="dropdown">
-            <h1>Language</h1>
-            <select id = "list" onchange = "getLanguage()">
-                <option value="en-US">en-US</option>
-                <option value="en-GB">en-GB</option>
-                <option value="pt-BR">pt-BR</option>
-            </select>
+            <h1>Select language:</h1>
+            <div class="dropdown-content">
+                <select id = "list" onchange = "getLanguage()">
+                    <option value="en-US">en-US</option>
+                    <option value="en-GB">en-GB</option>
+                    <option value="pt-BR">pt-BR</option>
+                </select>
+            </div>
         </div>
 
-        <div>
+        <div id = "clock">
             <h2>Time: <span id = 'time'></span></h2>
         </div>
     </div>
