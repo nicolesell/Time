@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "style.css">
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <div class="header">
+        
+    </div>
     <div class = "main-container">
         <div class="dropdown">
-            <h2>Employee Information</h2>
-            <select name="state" id = "state">
-                <option value="Alabama">AL</option>
-                <option value="Alaska">AK</option>
-                <option value="Arizona">AZ</option>
+            <h1>Language</h1>
+            <select id = "list" onchange = "getLanguage()">
+                <option value="en-US">en-US</option>
+                <option value="en-GB">en-GB</option>
+                <option value="pt-BR">pt-BR</option>
             </select>
         </div>
 
+        <div>
+            <h2>Time: <span id = 'time'></span></h2>
+        </div>
     </div>
 </body>
 </html>
